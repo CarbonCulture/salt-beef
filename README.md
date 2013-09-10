@@ -1,10 +1,10 @@
-spare-ribs
-==========
+salt-beef
+=========
 
-A fabric file to set up a herd of servers in a panic.
+A fabric file to set up a herd of servers in a panic, with added seasoning.
 
-Use this fabfile to play with rackspace, or bring up a load of servers,
-quicksharp.
+Use this fabfile to play with rackspace, or bring up a load of servers with
+salt-stack services, quicksharp.
 
 
 Usage
@@ -30,3 +30,5 @@ tempestuous weather.
 
 There's no really good reason for naming all the commands after cow-related
 activities, but then, since when was naming ever sane in technology?
+
+Thanks to @pikesley for the inspiration.
