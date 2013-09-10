@@ -209,7 +209,7 @@ def brand(aliases=None):
         aliases = [a.strip() for a in aliases.split(',')]
     if not getattr(env, 'box', False):
         abort("Must select a server to add to DNS first!")
-    record_name = ".".join([env.box.name, DOMAIN])
+    record_name = ".".join([env.box.name, DOMAIN]).replace('_', '-')
     dns = pyrax.cloud_dns
     domains = dict((d.name, d) for d in dns.list())
     domain = domains[DOMAIN]
